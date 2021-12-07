@@ -1,4 +1,86 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Press Start 2P", cursive;
+  background-color: #3b3b3f;
 }
+
+.title {
+  text-align: center;
+  color: rgb(95, 82, 82);
+  text-shadow: 3px 3px 3px hsl(0, 0%, 21%);
+  margin: 1rem;
+  font-weight: normal;
+  font-size: 30px;
+  color: #f1faee;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.header-button__retry {
+  background-color: #f1faee;
+  color: #3b3b3f;
+  border: none;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.header-button__retry:hover {
+  font-weight: bold;
+}
+
+.container {
+  background-color: blueviolet;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap; (ajuste) Default: not wrap 
+  */
+  flex-flow: row wrap; /*Lo mismo que ambos */
+
+  /* height: 300px; */
+  align-items: center;
+  /* align-items:
+    flex-start -> alinear en la parte superior
+    center -> centrar
+    stretch -> se alargan al arncho (default)
+    baseline -> alinea verticalmente independientemente de la altura de las cajas
+    flex-end -> alinea en la parte de abajo de la caja padre
+  */
+  align-content: flex-start;
+  /*
+    align-content:; alinear de manera verticual
+    flex-start -> (default)
+    center -> centra elementos
+    space-around -> deja espacio entre las cajas
+    space-between -> se pegan a los extremos
+
+  */
+  justify-content: center;
+  /* justify-content: 
+    Default: flex-start
+    flex-end -> derecha
+    space-between -> espacios entre las cajas
+    space-around -> spacios del lado izq y der
+    space-evely -> mismo espacion entre cajas y margenes
+  */
+}
+
+.container > .number > p {
+  background-color: #4895ef;
+  color: #f1faee;
+  margin: 20px;
+  padding: 15px;
+  font-size: 1.5em;
+}
+
+/*
+  flex-grow -> indica cuanto espacion debe ocupar cierta caja
+  flex-basis: 200px -> ocupa 200px de ancho definido 
+*/
