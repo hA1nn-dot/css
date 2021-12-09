@@ -21,7 +21,7 @@
     </header>
     <div class="container">
       <div class="number">
-        <p style="flex-grow: 1">?</p>
+        <p style="flex-grow: 1" class="numberValue">?</p>
       </div>
 
       <!-- <p>Texto 4</p>
@@ -31,13 +31,19 @@
 
     <div class="grid">
       <div class="input-number">
-        <input class="number" type="text" placeholder="Number" />
+        <input class="number__input" type="text" placeholder="Number" />
         <button class="grid-input-number__button">Check!</button>
       </div>
       <div class="score">
-        <p class="message">Message:</p>
-        <p class="score">Score:</p>
-        <p class="highscore">Highscore</p>
+        <div>
+          <p class="message">Start guessing</p>
+        </div>
+        <div>
+          <p class="score">Score: 20</p>
+        </div>
+        <div>
+          <p class="highscore">Highscore</p>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
