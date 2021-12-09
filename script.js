@@ -22,12 +22,22 @@ document
       score--;
     } else {
       document.querySelector(".message").textContent =
-        "It's less than " + number + ";)";
+        "It's less than " + number + " ;)";
       score--;
     }
+
     updateScore();
+    if (isPlayerLost()) {
+      document.querySelector(".message").textContent = "You lost the game :c";
+      document.querySelector(".numberValue").textContent = guessingNumber;
+    }
   });
 
 function updateScore() {
   document.querySelector(".score_text").textContent = score;
+}
+
+function isPlayerLost() {
+  if (score <= 0) return true;
+  return false;
 }
