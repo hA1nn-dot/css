@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="estilos.css" />
 
-    <title>Document</title>
+    <title>Guess the Number!</title>
   </head>
   <body>
     <header>
@@ -21,12 +21,25 @@
     </header>
     <div class="container">
       <div class="number">
-        <p style="flex-grow: 1">26</p>
+        <p style="flex-grow: 1">?</p>
       </div>
 
       <!-- <p>Texto 4</p>
       <p>Texto 5</p>
       <p>Texto 6</p> -->
     </div>
+
+    <div class="grid">
+      <div class="input-number">
+        <input class="number" type="text" placeholder="Number" />
+        <button class="grid-input-number__button">Check!</button>
+      </div>
+      <div class="score">
+        <p class="message">Message:</p>
+        <p class="score">Score:</p>
+        <p class="highscore">Highscore</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
