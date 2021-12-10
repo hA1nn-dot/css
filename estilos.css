@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
   font-family: "Press Start 2P", cursive;
+}
+
+body {
   background-color: #3b3b3f;
 }
 
@@ -37,7 +40,6 @@ header {
 }
 
 .container {
-  background-color: #4895ef;
   display: flex;
   /* flex-direction: row;
   flex-wrap: wrap; (ajuste) Default: not wrap 
@@ -106,12 +108,14 @@ header {
   grid-template-rows: minmax(20px, auto);
 }
 .input-number > .number__input {
+  background-color: #3b3b3f;
   color: white;
   font-size: 3em;
   text-align: center;
 }
 
 .input-number > .grid-input-number__button {
+  background-color: #3b3b3f;
   color: white;
   font-size: 1.5rem;
   text-align: center;
@@ -133,5 +137,5 @@ header {
 }
 
 .win {
-  background-color: #2fa82f;
+  background-color: #278b27;
 }
